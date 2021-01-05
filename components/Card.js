@@ -1,7 +1,7 @@
 import useDarkMode from "../hooks/useDarkMode";
 
 export default function Card() {
-  const [colorTheme, setTheme] = useDarkMode();
+  const [switchTheme] = useDarkMode();
   return (
     <div className="max-w-xs mx-auto bg-white dark:bg-gray-800 shadow-md rounded-lg overflow-hidden">
       <div className="px-4 py-2">
@@ -25,7 +25,7 @@ export default function Card() {
           $129
         </h1>
         <button
-          onClick={() => setTheme(colorTheme)}
+          onClick={() => switchTheme()}
           className="px-5 py-2 bg-green-500 rounded text-xs text-white font-semibold uppercase transition duration-300 ease-in-out hover:bg-green-700"
         >
           Buy
