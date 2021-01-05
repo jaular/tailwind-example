@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Card from "../components/Card";
+import Switch from "../components/Switch";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <Switch />
       </main>
     </>
   );
