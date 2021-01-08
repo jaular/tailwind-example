@@ -15,5 +15,5 @@ export default function useDarkMode() {
     }
   };
 
-  return [switchTheme];
+  return [switchTheme, theme];
 }

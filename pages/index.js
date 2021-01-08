@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Card from "../components/Card";
-import Switch from "../components/Switch";
+import Button from "../components/Button";
 
 export default function Home() {
   return (
@@ -11,6 +11,9 @@ export default function Home() {
       </Head>
 
       <main>
+        <section className="flex items-center justify-center my-6">
+          <Button />
+        </section>
         <section className="bg-gray-200 dark:bg-gray-700">
           <div className="p-6 my-12">
             <div className="flex items-center justify-center">
